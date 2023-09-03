@@ -1,0 +1,174 @@
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.container {
+
+    
+
+    .img {
+        border-radius: 100%;
+        animation-name: rotation;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+        
+    }
+    .img-left {
+        
+        animation-direction: normal;
+        
+        
+    }
+    .img-right {
+        
+        animation-direction: reverse;
+        
+    }
+    .img-stop {
+
+        animation-play-state: paused;
+
+    }
+    
+
+    .circlebtn {
+        width: 100px;
+        height: 100px;
+        border: 3px solid black;
+        border-radius: 100%;
+        display: flex;
+        gap: 10px;
+
+        
+
+        .left {
+            font-size: 20px;
+            width: 40px;
+            height: 100px;
+            padding-top: 25px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+
+        .line {
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 60px;
+            border: 2px solid black;
+        }
+        
+        .line-left {
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 44px;
+            border: 2px solid black;
+            transform: rotate(335deg);
+            transition: 0.3s;
+        }
+        .line-right {
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 74px;
+            border: 2px solid black;
+            transform: rotate(-335deg);
+            transition: 0.3s;
+        }
+
+        .right {
+            font-size: 20px;
+            width: 40px;
+            height: 100px;
+            padding-top: 25px;
+            cursor: pointer;
+            
+        }
+    }
+    .speedbtn {
+        width: 100px;
+        height: 100px;
+        border: 3px solid black;
+        border-radius: 100%;
+        display: flex;
+        gap: 30px;
+
+        .one {
+            cursor: pointer;
+            position: absolute;
+            left: 100px;
+            
+            
+        }
+        
+        
+        .two {
+            position: relative;
+            left: 105px;
+            top: 25px;
+            cursor: pointer;
+        }
+        .three {
+            position: relative;
+            left: 67px;
+            top: 55px;
+            cursor: pointer;
+        }
+        .line2 {
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 60px;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        
+        .l1 {
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 92px;
+            top: 375px;
+            border: 2px solid black;
+            transform: rotate(35deg);
+            
+        }
+        .l2{
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            top: 390px;
+            left: 98px;
+            border: 2px solid black;
+            transform: rotate(70deg);
+            transition: 0.3s;
+        }
+        .l3{
+            width: 0px;
+            height: 15px;
+            position: absolute;
+            left: 99px;
+            top: 417px;
+            border: 2px solid black;
+            transform: rotate(90deg);
+            transition: 0.3s;
+        }
+    }
+    .speed-one{
+        animation-duration: 1s;
+    }
+    .speed-two{
+        animation-duration: 500ms;
+    }
+    .speed-three{
+        animation-duration: 250ms;
+    }
+}

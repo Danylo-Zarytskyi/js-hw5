@@ -1,0 +1,142 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container .img {
+  border-radius: 100%;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.container .img-left {
+  animation-direction: normal;
+}
+.container .img-right {
+  animation-direction: reverse;
+}
+.container .img-stop {
+  animation-play-state: paused;
+}
+.container .circlebtn {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 100%;
+  display: flex;
+  gap: 10px;
+}
+.container .circlebtn .left {
+  font-size: 20px;
+  width: 40px;
+  height: 100px;
+  padding-top: 25px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.container .circlebtn .line {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 60px;
+  border: 2px solid black;
+}
+.container .circlebtn .line-left {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 44px;
+  border: 2px solid black;
+  transform: rotate(335deg);
+  transition: 0.3s;
+}
+.container .circlebtn .line-right {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 74px;
+  border: 2px solid black;
+  transform: rotate(-335deg);
+  transition: 0.3s;
+}
+.container .circlebtn .right {
+  font-size: 20px;
+  width: 40px;
+  height: 100px;
+  padding-top: 25px;
+  cursor: pointer;
+}
+.container .speedbtn {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 100%;
+  display: flex;
+  gap: 30px;
+}
+.container .speedbtn .one {
+  cursor: pointer;
+  position: absolute;
+  left: 100px;
+}
+.container .speedbtn .two {
+  position: relative;
+  left: 105px;
+  top: 25px;
+  cursor: pointer;
+}
+.container .speedbtn .three {
+  position: relative;
+  left: 67px;
+  top: 55px;
+  cursor: pointer;
+}
+.container .speedbtn .line2 {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 60px;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+.container .speedbtn .l1 {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 92px;
+  top: 375px;
+  border: 2px solid black;
+  transform: rotate(35deg);
+}
+.container .speedbtn .l2 {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  top: 390px;
+  left: 98px;
+  border: 2px solid black;
+  transform: rotate(70deg);
+  transition: 0.3s;
+}
+.container .speedbtn .l3 {
+  width: 0px;
+  height: 15px;
+  position: absolute;
+  left: 99px;
+  top: 417px;
+  border: 2px solid black;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.container .speed-one {
+  animation-duration: 1s;
+}
+.container .speed-two {
+  animation-duration: 500ms;
+}
+.container .speed-three {
+  animation-duration: 250ms;
+}/*# sourceMappingURL=style.css.map */
